@@ -12,7 +12,7 @@ private:
 	link head;
 	link tail;
 public:
-	queue_t() : head(nullptr), tail(nullptr) noexcept
+	queue_t() : head(nullptr), tail(nullptr)
 	{
 
 	}
@@ -56,11 +56,6 @@ public:
 		head = head_;
 		return result;
 	}
-	void show_elements() {
-		for (link t = head; t != nullptr; t = t->next) {
-			std::cout << t->value;
-		}
-	}
 	~queue_t() {
 		if (head == tail) {
 			delete head;
@@ -73,6 +68,5 @@ public:
 
 		head = nullptr;
 		tail = nullptr;
-		return;
 	}
 };
