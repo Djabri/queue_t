@@ -23,11 +23,24 @@ public:
 	}
 
 	void push(T value) {
-		link *node = new node_t;
+		if (head == nullptr) {
+			head = new node_t;
+
+			head->value = value;
+			head->next = nullptr;
+
+			tail = head;
+		}
+
+		tail->next = new node_t;
+		tail->next->value = value;
+
+		tail->next->next = nullptr;
+		tail = tail->next;
 	}
 	T pop() {
 		if (head == nullptr) {
-			throw "Erorr!\nqueue is empty";
+			throw "Erorr!\n Queue is empty, try again";
 		}
 
 		T result = head->value;
