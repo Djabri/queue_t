@@ -33,4 +33,5 @@ TEST_CASE("copy")
     
     ostream<<q1.pop();
     
-    REQUI
+    REQUIRE( "1" == ostream.str() );
+}
