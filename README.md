@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/Djabri/vector_example.svg?branch=master)](https://travis-ci.org/Djabri/vector_example)
+[![Build Status](https://travis-ci.org/Djabri/queue_t.svg?branch=master)](https://travis-ci.org/Djabri/queue_t)
 
 ```
 cmake -H. -B_builds -DBUILD_TESTS=ON
